@@ -7,9 +7,9 @@
 /*
  * Can change these variables
  */
-#define KP -1.0
+#define KP -0.08
 #define KI 0.0
-#define KD 0.0
+#define KD -1.0
 #define THROTTLE 0.2
 
 // for convenience
