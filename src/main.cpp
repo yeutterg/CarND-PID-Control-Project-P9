@@ -9,8 +9,8 @@
  */
 #define KP -0.08
 #define KI -0.0001
-#define KD -5.0
-#define THROTTLE 0.2
+#define KD -3.0
+#define THROTTLE 0.7
 
 // for convenience
 using json = nlohmann::json;
