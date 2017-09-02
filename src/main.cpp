@@ -75,7 +75,7 @@ int main()
 
           // Normalize steering value between -1 and 1
           steer_value = std::max(-1, steer_value);
-          steer_value = stf::min(1, steer_value);
+          steer_value = std::min(1, steer_value);
           
           // DEBUG
           std::cout << "CTE: " << cte << " Steering Value: " << steer_value << std::endl;
