@@ -9,7 +9,7 @@
  */
 #define KP -0.08
 #define KI -0.0001
-#define KD -2.0
+#define KD -5.0
 #define THROTTLE 0.2
 
 // for convenience
