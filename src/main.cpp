@@ -7,10 +7,10 @@
 /*
  * Can change these variables
  */
-#define KP 0.1
-#define KI 0.1
-#define KD 0.1
-#define THROTTLE 0.3
+#define KP -1.0
+#define KI 0.0
+#define KD 0.0
+#define THROTTLE 0.2
 
 // for convenience
 using json = nlohmann::json;
@@ -66,7 +66,7 @@ int main()
           * another PID controller to control the speed!
           */
 
-          // Update the error
+          // Update the error using the cross track error value
           pid.UpdateError(cte);
 
           // Set the steering value to the total error
