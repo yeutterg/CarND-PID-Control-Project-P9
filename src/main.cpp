@@ -11,7 +11,6 @@
 #define KI 0.1
 #define KD 0.1
 #define THROTTLE 0.3
-#define SPEED 30
 
 // for convenience
 using json = nlohmann::json;
@@ -74,8 +73,8 @@ int main()
           double steer_value = pid.TotalError();
 
           // Normalize steering value between -1 and 1
-          steer_value = std::max(-1, steer_value);
-          steer_value = std::min(1, steer_value);
+          steer_value = std::max(-1.0, steer_value);
+          steer_value = std::min(1.0, steer_value);
           
           // DEBUG
           std::cout << "CTE: " << cte << " Steering Value: " << steer_value << std::endl;
