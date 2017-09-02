@@ -32,7 +32,7 @@ void PID::Init(double Kp, double Ki, double Kd) {
  * @param cte: The cross track error value
  */
 void PID::UpdateError(double cte) {
-    d = cte - p_error;
+    d_error = cte - p_error;
     p_error = cte;
     i_error += cte;
 }
